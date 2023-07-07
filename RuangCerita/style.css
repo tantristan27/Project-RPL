@@ -1,0 +1,313 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style Header */
+  header {
+    background-color: #4caf96;
+    color: #0000;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding: 10px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+  
+  nav a {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+  #loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+  }
+
+  #tentang {
+    padding: 50px;
+    text-align: center;
+  }
+
+  #tentang h2 {
+    font-size: 40px;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+  }
+
+  #tentang p {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #hero {
+    background-image: url("img/hero2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  #hero p {
+    font-size: 40px;
+    font-family: 'Alegreya', serif;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color:black;
+  }
+
+  #blog {
+    padding: 100px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  #blog h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    background-color: #4caf96;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  button:hover {
+    background-color: #EA8FEA;
+    color: white;
+  }
+
+  #blog p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  #konten {
+    padding: 100px;
+    text-align: center;
+    background-color: #DEFCF9;
+  }
+
+  #konten h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  #konten h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Style Form */
+  main form {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+  
+  button {
+    background-color: #4caf96;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #EA8FEA;
+  }
+
+  #konsul {
+    padding: 30px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+  }
+
+  #konsul h2 {
+    font-size: 20px;
+  }
+  
+  #curhat{
+    background-image: linear-gradient(to bottom, #7AD9F5, #BDF2D5);
+    padding: 20px;
+  }
+
+  .discussion-group {
+    background-color: #FFF7F7;
+    border-radius: 8px;
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .discussion-group h3 {
+    font-size: 1.5em;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .message-list {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  #send-button {
+    background-color: #4caf96;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #send-button:hover {
+    background-color: #EA8FEA;
+  }
+
+  #kontak {
+    background: #dedede;
+    padding:50px 0px 50px 0px;
+    font-family: 'Inter', sans-serif;
+}
+
+.kontak {
+  margin: 100px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.kontak-section {
+    width: 20%;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4caf96;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #EA8FEA;
+}
+
+  footer {
+    background-color: #F6F1F1;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+  }

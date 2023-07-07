@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curhat</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="notif.js"></script>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo.png" width="70"></a>
+    <nav>
+      <ul>
+        <li><a href="beranda.html" onclick="delay()">Beranda</a></li>
+        <li><a href="nyoba.html" onclick="delay()">Grup</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="submit.php" method="POST">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="curhatan">Curhat:</label>
+      <textarea id="curhatan" name="curhat" required></textarea>
+
+      <button onclick="notif()">Kirim Curhatan</button>
+    </form>
+  </main>
+ <br>
+<section id="konsul">
+  <h2>Punya masalah yang ingin dikonsultasikan?</h2>
+  <br>
+  <button class="button" onclick="window.location.href='ahli.html'">Konsultasi</button>
+</section>
+</body>
+</html>
